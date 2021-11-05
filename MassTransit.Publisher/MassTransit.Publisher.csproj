@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aa9b4e9c-2587-4fdc-8924-abd3d554ff26</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.2.3" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.3" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.2.3" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RabbitMQ.Models\RabbitMQ.Models.csproj" />
+  </ItemGroup>
+
+</Project>
